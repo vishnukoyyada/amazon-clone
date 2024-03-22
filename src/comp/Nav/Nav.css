@@ -2,7 +2,9 @@
     background-color: #131921;
    display: flex;
    align-items: center;
-
+   position:sticky;
+   top:0;
+   z-index: 100;
  
   }
   
@@ -11,9 +13,53 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 18px;
+    object-fit: contain;
      
   }
   .header .searchbar .searchbar_input{
-    width: 300px;
+    width: 900px;
+    padding: 8px;
+    border: none;
  
   }
+
+  .searchbar{
+    display: flex;
+
+    
+  }
+  .header_nav{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.header_link{
+  color: white;
+  text-decoration: none;
+}
+.header__option{
+ display: flex;
+ flex-direction: column;
+ margin-left: 10px;
+ margin-right:10px
+}
+
+.header_optionLineOne{
+  font-size: 10px;
+}
+.header__optionLineTwo{
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header_optionBasket img {
+  width: 20px;
+  height: auto;
+
+   
+}
+
+.header_optionBasket{
+  display: flex;
+  align-items: center;
+}
