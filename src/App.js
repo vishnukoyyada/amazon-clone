@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './comp/Home/HomePage';
+import Checkout from './comp/Checkout/Checkout';
+import Login from './comp/Login/Login';
+import Contact from './comp/Contact/Contact';
+import NavBar from './comp/Nav/Nav';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        {/* Conditionally render the NavBar component only on the home page */}
+        {window.location.pathname === '/' && <NavBar />}
+
+        <Routes>
+          <Route path="/" element={<HomePage/>} /> {/* Home page */}
+          <Route path="/checkout" element={<Checkout />} /> {/* Checkout page */}
+          <Route path="/login" element={<Login />} /> {/* Login page */}
+          <Route path="/contact" element={<Contact />} /> {/* Contact page */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
