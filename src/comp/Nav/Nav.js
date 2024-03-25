@@ -11,11 +11,15 @@ import { Link } from 'react-router-dom';
 import "./Nav.css";
 import amazon_logo from '../../assets/amazon_logo.png';
 import basket_logo from '../../assets/shopping-cart.png';
+import { useStateValue } from '../StateProvider';
+//import  reducer, {InitialState} from '../../reducer';
 //import SearchIcon from "@material-ui/icons/Search";
 
 
 
+
 function NavBar(){
+  const [ { basket }] = useStateValue();
     return (
         /*
         logo
@@ -85,7 +89,7 @@ function NavBar(){
           <Link to = '/Checkout' className='header_link'>
             <div className='header_optionBasket'>
             <img src={basket_logo} alt="Description of the image" className='header_logo' />
-              <span className="header__optionLineTwo"> 0</span>
+              <span className="header__optionLineTwo"> {basket.length}</span>
 
 
             </div>
