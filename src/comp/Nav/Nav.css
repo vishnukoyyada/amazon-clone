@@ -52,14 +52,4 @@
   font-weight: 800;
 }
 
-.header_optionBasket img {
-  width: 20px;
-  height: auto;
 
-   
-}
-
-.header_optionBasket{
-  display: flex;
-  align-items: center;
-}

@@ -88,7 +88,7 @@ function NavBar(){
 
           <Link to = '/Checkout' className='header_link'>
             <div className='header_optionBasket'>
-            <img src={basket_logo} alt="Description of the image" className='header_logo' />
+              <span className="header__optionLineOne">cart </span>
               <span className="header__optionLineTwo"> {basket.length}</span>
 
 
