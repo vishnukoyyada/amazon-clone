@@ -58,13 +58,14 @@ function NavBar(){
             prime account
             */
           }
-        
+     
           <Link to = '/'  className='header_link'>
             <div className="header__option">
               <span className="header__optionLineOne">Your </span>
               <span className="header__optionLineTwo">Prime</span>
             </div>
           </Link>
+        
 
           {
             /*
