@@ -58,48 +58,53 @@ function Offers() {
   ];
 
   const todaysDealsImages = [
-    'https://via.placeholder.com/224x184.png?text=Deal+1',
-    'https://via.placeholder.com/224x184.png?text=Deal+2',
-    'https://via.placeholder.com/224x184.png?text=Deal+3',
-    'https://via.placeholder.com/224x184.png?text=Deal+4',
-    'https://via.placeholder.com/224x184.png?text=Deal+5',
+"https://m.media-amazon.com/images/I/4105IiC5tDL._AC_SY200_.jpg",
+"https://m.media-amazon.com/images/I/41bLD50sZSL._AC_SY200_.jpg",
+"https://m.media-amazon.com/images/I/21Y8QZTRJBL._AC_SY200_.jpg",
+"https://m.media-amazon.com/images/I/31agL1j3cHL._AC_SY200_.jpg",
+"https://m.media-amazon.com/images/I/31e1ZcqiwTL._AC_SY200_.jpg",
+
+"https://m.media-amazon.com/images/I/618I++aMUNL._AC_SY200_.jpg",
+"https://m.media-amazon.com/images/I/31-TqE7SqjL._AC_SY200_.jpg",
+"https://m.media-amazon.com/images/I/61H12wqaHNL._AC_SY200_.jpg",
+
   ];
 
   return (
-    <div>
-      <h1 className='header'>Welcome to the offers and discounts page</h1>
-      <div className="offers">
-        <div className="offers__slider">
-          <img src={images[currentSlide]} alt="Offer Slide" />
-          <button className="offers__slider-button offers__slider-button--prev" onClick={handlePrevSlide}>
-            &#8592;
-          </button>
-          <button className="offers__slider-button offers__slider-button--next" onClick={handleNextSlide}>
-            &#8594;
-          </button>
-        </div>
-        <div className="product-categories">
-          {productCategories.map((category, index) => (
-            <div key={index} className="category-box">
-              <h2>{category.title}</h2>
-              <div className="category-images">
-                {category.images.map((image, i) => (
-                  <img key={i} src={image} alt={`Image ${i + 1}`} />
-                ))}
-              </div>
+<div>
+    <h1>Welcome to the offers and discounts page</h1>
+    <div className="offers">
+      <div className="offers__slider">
+        <img src={images[currentSlide]} alt="Offer Slide" />
+        <button className="offers__slider-button offers__slider-button--prev" onClick={handlePrevSlide}>
+          &#8592;
+        </button>
+        <button className="offers__slider-button offers__slider-button--next" onClick={handleNextSlide}>
+          &#8594;
+        </button>
+      </div>
+      <div className="product-categories">
+        {productCategories.map((category, index) => (
+          <div key={index} className="category-box">
+            <h2>{category.title}</h2>
+            <div className="category-images">
+              {category.images.map((image, i) => (
+                <img key={i} src={image} alt={`Image ${i + 1}`} />
+              ))}
             </div>
-          ))}
-        </div>
-        <div className="todays-deals">
-          <h2 className="todays-deals-heading">Today's Deals</h2>
-          <div className="todays-deals-slider">
-            {todaysDealsImages.map((image, index) => (
-              <img key={index} src={image} alt={`Deal ${index + 1}`} className="todays-deal-image" />
-            ))}
           </div>
+        ))}
+      </div>
+      <div className="todays-deals">
+        <h2 className="todays-deals-heading">Today's Deals</h2>
+        <div className="todays-deals-slider">
+          {todaysDealsImages.map((image, index) => (
+            <img key={index} src={image} alt={`Deal ${index + 1}`} className="todays-deal-image" />
+          ))}
         </div>
       </div>
     </div>
+  </div>
   );
 }
 

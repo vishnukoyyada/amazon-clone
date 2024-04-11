@@ -1,6 +1,5 @@
 /* Place these styles in your Offers.css file */
 
-
 .offers {
   display: flex;
   flex-direction: column;
@@ -74,8 +73,14 @@ products
   margin-bottom: 10px;
 }
 
+
+/* Place these styles in your Offers.css file */
+
 .todays-deals {
   margin-top: 40px;
+  padding: 20px 0;
+  display: flex; /* Make the todays-deals section a flex container */
+  flex-direction: column; /* Stack the heading and slider vertically */
 }
 
 .todays-deals-heading {
@@ -85,16 +90,26 @@ products
 
 .todays-deals-slider {
   display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  padding-bottom: 20px;
+  flex-wrap: nowrap; /* Ensure items don't wrap onto multiple lines */
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Enable snapping to each image */
+  /* Adjust scrollbar appearance as needed */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1);
+}
+
+.todays-deal-image {
+  max-width: 224px;
+  max-height: 184px;
+  scroll-snap-align: start; /* Snap each image to the start of the viewport */
+  margin-right: 20px; /* Add spacing between images */
 }
 
 .todays-deals-slider::-webkit-scrollbar {
-  display: none;
+  width: 10px; /* Adjust scrollbar width */
 }
 
-.todays-deals-slider img {
-  max-height: 184px;
-  max-width: 224px;
+.todays-deals-slider::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Scrollbar thumb color */
+  border-radius: 5px; /* Rounded corners for scrollbar thumb */
 }
