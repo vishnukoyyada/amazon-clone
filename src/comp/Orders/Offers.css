@@ -1,5 +1,8 @@
 /* Place these styles in your Offers.css file */
-
+.Offerheader{
+  background-color: chocolate;
+  padding-left: 500px;
+}
 .offers {
   display: flex;
   flex-direction: column;

@@ -72,7 +72,7 @@ function Offers() {
 
   return (
 <div>
-    <h1>Welcome to the offers and discounts page</h1>
+    <h1 className='Offerheader'>Welcome to the offers and discounts page</h1>
     <div className="offers">
       <div className="offers__slider">
         <img src={images[currentSlide]} alt="Offer Slide" />
