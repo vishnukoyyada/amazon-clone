@@ -1,13 +1,5 @@
 /* Place these styles in your Offers.css file */
-.header{
-  background-color: #dea71c;
-  display: flex;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  padding-left: 500px;
-}
+
 
 .offers {
   display: flex;
