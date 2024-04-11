@@ -55,3 +55,29 @@
     right: 10px; /* Adjust right margin for spacing */
   }
   
+/*
+products
+*/
+  .product-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .product-category {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .product-category h2 {
+    margin-bottom: 10px;
+  }
+  
+  .product-category img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
