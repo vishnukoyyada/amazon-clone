@@ -9,7 +9,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Nav.css";
-import amazon_logo from '../../assets/amazon_logo.png';
+import amazon_logo from '../../assets/newlogo.png';
 import basket_logo from '../../assets/shopping-cart.png';
 import { useStateValue } from '../StateProvider';
 //import  reducer, {InitialState} from '../../reducer';
@@ -59,13 +59,15 @@ function NavBar(){
             */
           }
      
+     {/*
           <Link to = '/'  className='header_link'>
             <div className="header__option">
               <span className="header__optionLineOne">Your </span>
               <span className="header__optionLineTwo">Prime</span>
             </div>
           </Link>
-        
+          */
+      }  
 
           {
             /*

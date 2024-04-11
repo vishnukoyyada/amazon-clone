@@ -10,9 +10,7 @@ function App() {
   return (
     <Router>
       <div className="app">
-        {/* Conditionally render the NavBar component only on the home page */}
         {window.location.pathname === '/' && <NavBar />}
-
         <Routes>
           <Route path="/" element={<HomePage/>} /> {/* Home page */}
           <Route path="/checkout" element={<Checkout />} /> {/* Checkout page */}
