@@ -1,13 +1,13 @@
-.header {
-    background-color: #131921;
-   display: flex;
-   align-items: center;
-   position:sticky;
-   top:0;
-   z-index: 100;
- 
-  }
-  
+
+.header{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-left: 5px;
+}
   .header img {
     width: 30px;
     border-radius: 2px;

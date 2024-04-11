@@ -32,30 +32,37 @@ function Offers() {
       title: 'Fashion for every season | Up to 70% off',
       images: [
         "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF1-186-116._SY116_CB636048992_.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-186-116._SY116_CB636048992_.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-186-116._SY116_CB636048992_.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-186-116._SY116_CB636048992_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-186-116._SY116_CB636048992_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-186-116._SY116_CB636048992_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-186-116._SY116_CB636048992_.jpg",
       ],
     },
     {
       title: 'Electronics & Appliances | Lowest prices',
       images: [
-"https://images-eu.ssl-images-amazon.com/images/G/31/img23/CE/MSO/April/SetC/Boat_D_Qc_1x._SY116_CB560203706_.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img23/CE/MSO/April/SetC/Boult_D_Qc_1x._SY116_CB560203706_.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img23/CE/MSO/April/SetC/Noise_D_Qc_1x._SY116_CB560203706_.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img23/CE/MSO/April/SetC/Zeb_D_Qc_1x._SY116_CB560203706_.jpg",
-
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img23/CE/MSO/April/SetC/Boat_D_Qc_1x._SY116_CB560203706_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img23/CE/MSO/April/SetC/Boult_D_Qc_1x._SY116_CB560203706_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img23/CE/MSO/April/SetC/Noise_D_Qc_1x._SY116_CB560203706_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img23/CE/MSO/April/SetC/Zeb_D_Qc_1x._SY116_CB560203706_.jpg",
       ],
     },
     {
       title: 'Automotive essentials | Up to 60% off',
       images: [
-"https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg",
-"https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg",
       ],
     },
+  ];
+
+  const todaysDealsImages = [
+    'https://via.placeholder.com/224x184.png?text=Deal+1',
+    'https://via.placeholder.com/224x184.png?text=Deal+2',
+    'https://via.placeholder.com/224x184.png?text=Deal+3',
+    'https://via.placeholder.com/224x184.png?text=Deal+4',
+    'https://via.placeholder.com/224x184.png?text=Deal+5',
   ];
 
   return (
@@ -82,6 +89,14 @@ function Offers() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="todays-deals">
+          <h2 className="todays-deals-heading">Today's Deals</h2>
+          <div className="todays-deals-slider">
+            {todaysDealsImages.map((image, index) => (
+              <img key={index} src={image} alt={`Deal ${index + 1}`} className="todays-deal-image" />
+            ))}
+          </div>
         </div>
       </div>
     </div>
