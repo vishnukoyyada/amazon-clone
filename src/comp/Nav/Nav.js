@@ -45,10 +45,10 @@ function NavBar(){
             your orders
             */
           }
-          <Link to = '/Login'  className='header_link'>
+          <Link to = '/Offers'  className='header_link'>
             <div className="header__option">
-              <span className="header__optionLineOne">your </span>
-              <span className="header__optionLineTwo"> orders</span>
+              <span className="header__optionLineOne">Today's </span>
+              <span className="header__optionLineTwo">Offers & deals</span>
             </div>
           </Link>
 

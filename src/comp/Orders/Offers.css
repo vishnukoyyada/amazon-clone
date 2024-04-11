@@ -1,0 +1,52 @@
+/* Place these styles in your Offers.css file */
+
+.header {
+    margin-left: 50px; /* Adjust margin as needed */
+  }
+  
+  .offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0; /* Adjust margins as needed */
+  }
+  
+  .offers__slider {
+    width: 1390px; /* Adjust width as needed */
+    height: 300px; /* Set height to match button height */
+    overflow: hidden;
+    margin-bottom: 2rem; /* Add some space below the slider */
+  }
+  
+  .offers__slider img {
+    width: 100%; /* Ensures image fills the container horizontally */
+    height: 100%; /* Ensures image fills the container vertically */
+    object-fit: cover; /* Ensures image covers the entire area */
+  }
+  
+  .offers__slider-button {
+    position: absolute;
+    top: inherit; /* Align buttons to top of the slider */
+    transform: translateY(0); /* No need for vertical adjustment */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    font-size: 2rem; /* Adjust font size for larger buttons */
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5%; /* Round buttons */
+    height: 300px;
+  }
+  
+  .offers__slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+  }
+  
+  .offers__slider-button--prev {
+    left: 10px; /* Adjust left margin for spacing */
+  }
+  
+  .offers__slider-button--next {
+    right: 10px; /* Adjust right margin for spacing */
+  }
+  

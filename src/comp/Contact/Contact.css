@@ -8,6 +8,8 @@
   margin-bottom: 5rem;
   background-image: url('../../assets/contact.avif'); /* Replace with your image path */
   background-size: cover;
+  background-size: cover;
+  background-position: center;
  /* Resize the image to cover the container */
  /* Center the image horizontally and vertically */
 }
